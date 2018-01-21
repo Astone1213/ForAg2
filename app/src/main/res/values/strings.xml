@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ForAg</string>
+    <string name="loveAg">i love you,Ag.</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="counter">counter</string>
+    <string name="counter_textview_isEarly">Were you go bed early last night?</string>
+    <string name="counter_button_yes">yes</string>
+    <string name="counter_button_no">no</string>
+    <string name="counter_textview_result">you have already went bed early for 0 days,and lately for 0 days.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
