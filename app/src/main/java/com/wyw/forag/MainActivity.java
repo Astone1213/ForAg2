@@ -1,5 +1,7 @@
 package com.wyw.forag;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -27,8 +29,15 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "send to handsome boyfriend", Snackbar.LENGTH_LONG)
+                        .setAction("message", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Uri uri = Uri.parse("smsto:13729584271");
+                                Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
+                                startActivity(intent);
+                            }
+                        }).show();
             }
         });
 
@@ -81,11 +90,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_alarm) {
-            // Handle the camera action
+            Intent intent = new Intent(MainActivity.this,CActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
+            Intent intent = new Intent(); //调用照相机
+            intent.setAction("android.media.action.STILL_IMAGE_CAMERA");
+            startActivity(intent);
+        } else if (id == R.id.nav_browser) {
+            Uri uri = Uri.parse("http://www.baidu.com");
+            Intent intent  = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
