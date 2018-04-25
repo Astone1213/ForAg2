@@ -8,8 +8,13 @@
 
     <string name="action_settings">设置</string>
     <string name="counter">计睡器</string>
+    <string name="browser">浏览器</string>
+    <string name="gallery">大象机</string>
     <string name="counter_button_yes">是</string>
     <string name="counter_button_no">否</string>
     <string name="counter_textview_result">你已经早睡了0天，晚睡了0天！</string>
     <string name="counter_textview_isEarly">你早睡了吗</string>
+    <string name="counter_button_reset">重置</string>
+    <string name="LoveDay">相爱的天数：</string>
+    <string name="exportrecord">导出记录</string>
 </resources>
