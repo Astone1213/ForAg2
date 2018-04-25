@@ -10,23 +10,23 @@
         android:id="@+id/counter_button_yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:text="@string/counter_button_yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/counter_button_no"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="56dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/counter_button_no"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="148dp"
         android:text="@string/counter_button_no"
         app:layout_constraintBaseline_toBaselineOf="@+id/counter_button_yes"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="UnknownId"
-        android:layout_marginRight="56dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="UnknownId" />
 
     <TextView
         android:id="@+id/counter_textview_result"
@@ -48,4 +48,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/counter_button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/counter_button_reset"
+        app:layout_constraintBaseline_toBaselineOf="@+id/counter_button_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/counter_button_no" />
 </android.support.constraint.ConstraintLayout>

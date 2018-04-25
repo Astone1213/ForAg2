@@ -14,4 +14,7 @@
     <string name="counter_button_yes">yes</string>
     <string name="counter_button_no">no</string>
     <string name="counter_textview_result">you have already went bed early for 0 days,and lately for 0 days.</string>
+    <string name="counter_button_reset">reset</string>
+    <string name="LoveDay">we hava love each other for 0 day.</string>
+    <string name="exportrecord">exportRecord</string>
 </resources>
